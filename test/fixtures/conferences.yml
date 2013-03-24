@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  time: 2013-03-23 12:07:50
+  date: 2013-03-23
+  category: MyString
+  obligatory: false
+  speaker: MyString
+
+two:
+  name: MyString
+  time: 2013-03-23 12:07:50
+  date: 2013-03-23
+  category: MyString
+  obligatory: false
+  speaker: MyString
