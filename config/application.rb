@@ -1,6 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-#agragado para probar que es
-require "sprockets/railtie"
+
 
 
 
