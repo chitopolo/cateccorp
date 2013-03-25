@@ -43,5 +43,6 @@ gem 'rvm-capistrano'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'omniauth-facebook'
 
 gem "less-rails"

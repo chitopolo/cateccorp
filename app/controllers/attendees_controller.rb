@@ -1,4 +1,6 @@
 class AttendeesController < ApplicationController
+
+
   # GET /attendees
   # GET /attendees.json
   def index
@@ -80,4 +82,5 @@ class AttendeesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

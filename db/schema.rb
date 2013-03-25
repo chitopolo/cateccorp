@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130323173734) do
+ActiveRecord::Schema.define(:version => 20130325220825) do
 
   create_table "attendees", :force => true do |t|
     t.string   "first"
@@ -52,6 +52,23 @@ ActiveRecord::Schema.define(:version => 20130323173734) do
     t.string   "speaker"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "image"
+    t.string   "urls"
+    t.string   "location"
+    t.boolean  "verified"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
 end

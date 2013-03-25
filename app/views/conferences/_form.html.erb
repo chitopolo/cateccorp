@@ -1,36 +1,36 @@
 <%= form_for @conference, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
+    <%= f.label "Nombre", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :name, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :time, :class => 'control-label' %>
+    <%= f.label "Hora", :class => 'control-label' %>
     <div class="controls">
       <%= f.time_select :time, :class => 'time_select' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :date, :class => 'control-label' %>
+    <%= f.label "Dia", :class => 'control-label' %>
     <div class="controls">
       <%= f.date_select :date, :class => 'date_select' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :category, :class => 'control-label' %>
+    <%= f.label "Categoria", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :category, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :obligatory, :class => 'control-label' %>
+    <%= f.label "Obligatorio?", :class => 'control-label' %>
     <div class="controls">
       <%= f.check_box :obligatory, :class => 'check_box' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :speaker, :class => 'control-label' %>
+    <%= f.label "Expositor", :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :speaker, :class => 'text_field' %>
     </div>
