@@ -1,35 +1,31 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Conference -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @conference.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @conference.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:time) %>:</strong></dt>
+  <dd><%= @conference.time %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
+  <dd><%= @conference.date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:category) %>:</strong></dt>
+  <dd><%= @conference.category %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:obligatory) %>:</strong></dt>
+  <dd><%= @conference.obligatory %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:speaker) %>:</strong></dt>
+  <dd><%= @conference.speaker %></dd>
+</dl>
 
-<p>
-  <b>Time:</b>
-  <%= @conference.time %>
-</p>
-
-<p>
-  <b>Date:</b>
-  <%= @conference.date %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @conference.category %>
-</p>
-
-<p>
-  <b>Obligatory:</b>
-  <%= @conference.obligatory %>
-</p>
-
-<p>
-  <b>Speaker:</b>
-  <%= @conference.speaker %>
-</p>
-
-
-<%= link_to 'Edit', edit_conference_path(@conference) %> |
-<%= link_to 'Back', conferences_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              conferences_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_conference_path(@conference), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              conference_path(@conference),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
