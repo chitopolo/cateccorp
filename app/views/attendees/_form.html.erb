@@ -127,7 +127,11 @@
 
   <div class="form-actions">
     <%= f.submit "Registrarme!", :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+<% if current_user %>
+  <% if current_user.admin %>
+<%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 attendees_path, :class => 'btn' %>
+                <% end -%>
+                <% end -%>
   </div>
 <% end %>

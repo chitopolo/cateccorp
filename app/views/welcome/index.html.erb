@@ -1,3 +1,15 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=440246749395897";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -17,13 +29,15 @@
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
+<div class="fb-like" data-href="http://www.ucatec.edu.bo" data-send="false" data-layout="button_count" data-width="1170" data-show-faces="false"></div>
+<div class="fb-facepile" data-href="http://www.ucatec.edu.bo" data-size="large" data-max-rows="1" data-width="1170"></div>
 <div class = "hero-unit">
 	<h2>Invitación</h2>
 	<p>La Corporación Educativa CATEC con presencia en varios departamentos de nuestro país, anualmente realiza viajes a cada una de las unidades académicas con las que cuenta, con el objetivo de que estudiantes, docentes y administrativos puedan aprovechar de varias actividades académicas en las que los seminarios y conferencias son impartidos por profesionales de renombre nacional y que no siempre pueden visitar nuestro departamento.
 Por otro lado y con el objetivo de formar profesionales que sean líderes emprendedores, este tipo de actividades de vinculación nacional, permite a los jóvenes compartir y confraternizar con personas con quienes inician relaciones de amistad que más adelante  y al momento de llevar adelante emprendimientos de carácter nacional,  se convierten en interesantes alianzas estratégicas; motivo que ha hecho posible que la Dirección Departamental de Turismo, planifique varios eventos exclusivos para nuestras delegaciones.
 Estamos seguros que esta experiencia que se llevará a cabo del 11 al 14 de abril, será de mucho beneficio para todos y cada uno de los participantes.</p>
 	<div>
-		 <div class ="btn btn-primary"><%= link_to "Registro", :controller => "welcome", :action => "registration"  %></div>
+		 <div class ="btn btn-large"><%= link_to "Registro", :controller => "welcome", :action => "registration"  %></div>
 		
 	</div>
 

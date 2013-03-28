@@ -42,7 +42,8 @@
   <dd><%= @attendee.directionapoderado %></dd>
 </dl>
 
-
+<% if current_user %>
+  <% if current_user.admin %>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
@@ -55,3 +56,5 @@
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
 </div>
+<% end -%>
+<% end -%>
