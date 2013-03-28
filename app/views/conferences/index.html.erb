@@ -51,6 +51,15 @@
 
  <!-- aqui empieza lo bonito -->
 
+<div class ="row-fluid"> 
+    <div class = "btn btn-primary disabled span4">Titulo de la conferencia</div>
+    <div class = "btn btn-info disabled span2">Hora</div>
+    <div class = "btn btn-warning disabled span2">Fecha</div>
+    <div class = "btn btn-info disabled span2">Categoria</div>
+    <div class = "btn btn-success disabled span2">Expositor</div>
+
+</div>
+
 
 <%- model_class = Conference -%>
 <div class="page-header">
@@ -65,11 +74,13 @@
 
         <div class = "hero-unit">
           <div class ="row-fluid">
-            <div class = "btn btn-primary disabled span4"><%= conference.name %></div>
-            <div class = "btn btn-info disabled span1"><%= conference.time.strftime('%H:%M') %></div>
-            <div class = "btn btn-warning disabled span2"><%= conference.date.to_formatted_s(:long) %></div>
-            <div class = "btn btn-info disabled span2"><%= conference.category %></div>
-            <div class = "btn btn-success disabled span3"><%= conference.speaker %></div>
+            <div class = "btn btn-primary disabled span12"><%= conference.name %></div>
+            <div class ="row-fluid">
+            <div class = "btn btn-info disabled span2"><%= conference.time.strftime('%H:%M') %></div>
+            <div class = "btn btn-warning disabled span3"><%= conference.date.to_formatted_s(:long) %></div>
+            <div class = "btn btn-info disabled span3"><%= conference.category %></div>
+            <div class = "btn btn-success disabled span4"><%= conference.speaker %></div>
+          </div>
          </div>
         </div>
       
