@@ -66,11 +66,10 @@
         <div class = "hero-unit">
           <div class ="row-fluid">
             <div class = "btn btn-primary disabled span4"><%= conference.name %></div>
-            <div class = "btn disabled span1"><%= conference.time.strftime('%H:%M') %></div>
-            <div class = "btn disabled span2"><%= conference.date.to_formatted_s(:long) %></div>
-            <div class = "btn disabled span2"><%= conference.category %></div>
-            <div class = "btn disabled span1"><%= conference.obligatory %></div>
-            <div class = "btn disabled span2"><%= conference.speaker %></div>
+            <div class = "btn btn-info disabled span1"><%= conference.time.strftime('%H:%M') %></div>
+            <div class = "btn btn-warning disabled span2"><%= conference.date.to_formatted_s(:long) %></div>
+            <div class = "btn btn-info disabled span2"><%= conference.category %></div>
+            <div class = "btn btn-success disabled span3"><%= conference.speaker %></div>
          </div>
         </div>
       
