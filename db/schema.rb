@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20130325220825) do
     t.boolean  "verified"
     t.string   "oauth_token"
     t.datetime "oauth_expires_at"
+    t.boolean  "admin"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end

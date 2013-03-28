@@ -1,46 +1,48 @@
 <%- model_class = Attendee -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h1>Detalle del Registro</h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:first) %>:</strong></dt>
+  <dt><strong>Nombre:</strong></dt>
   <dd><%= @attendee.first %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:last) %>:</strong></dt>
+  <dt><strong>Apellido Paterno:</strong></dt>
   <dd><%= @attendee.last %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:last2) %>:</strong></dt>
+  <dt><strong>Apellido Materno:</strong></dt>
   <dd><%= @attendee.last2 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:career) %>:</strong></dt>
+  <dt><strong>Carrera:</strong></dt>
   <dd><%= @attendee.career %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:level) %>:</strong></dt>
+  <dt><strong>Nivel:</strong></dt>
   <dd><%= @attendee.level %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dt><strong>Tu Email:</strong></dt>
   <dd><%= @attendee.email %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:ci) %>:</strong></dt>
+  <dt><strong>Carnet de Identidad:</strong></dt>
   <dd><%= @attendee.ci %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dt><strong>Ciudad:</strong></dt>
   <dd><%= @attendee.city %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:direction) %>:</strong></dt>
+  <dt><strong>Dirección:</strong></dt>
   <dd><%= @attendee.direction %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:zone) %>:</strong></dt>
+  <dt><strong>Zona:</strong></dt>
   <dd><%= @attendee.zone %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:telephone) %>:</strong></dt>
+  <dt><strong>Telefono:</strong></dt>
   <dd><%= @attendee.telephone %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:cellphone) %>:</strong></dt>
+  <dt><strong>Celular:</strong></dt>
   <dd><%= @attendee.cellphone %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:other) %>:</strong></dt>
+  <dt><strong>Otro numero:</strong></dt>
   <dd><%= @attendee.other %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:health) %>:</strong></dt>
+  <dt><strong>Problemas de Salud:</strong></dt>
   <dd><%= @attendee.health %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:apoderado) %>:</strong></dt>
+  <dt><strong>Nombre del Apoderado:</strong></dt>
   <dd><%= @attendee.apoderado %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:parentesco) %>:</strong></dt>
+  <dt><strong>Parentesco del Apoderado:</strong></dt>
   <dd><%= @attendee.parentesco %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:telephoneapoderado) %>:</strong></dt>
+  <dt><strong>Telefono del apoderado:</strong></dt>
   <dd><%= @attendee.telephoneapoderado %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:directionapoderado) %>:</strong></dt>
+  <dt><strong>Dirección del apoderado:</strong></dt>
   <dd><%= @attendee.directionapoderado %></dd>
 </dl>
+
+
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),

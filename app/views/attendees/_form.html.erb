@@ -110,6 +110,7 @@
 
 
 
+
 <% for conference in Conference.find(:all) %>
         <div>
                 <%= check_box_tag "attendee[conference_ids][]", conference.id, @attendee.conferences.include?(conference)  %>
@@ -121,7 +122,7 @@
 
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= f.submit "Registrarme!", :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 attendees_path, :class => 'btn' %>
   </div>

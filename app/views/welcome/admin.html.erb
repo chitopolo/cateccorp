@@ -1,0 +1,29 @@
+<div class = "hero-unit">
+			
+              
+                  <% if current_user %>
+                   <div class = "span6">
+                    Iniciaste sesion como <strong><%= current_user.name %></strong>!
+                    <%= link_to "Cerrar sesion", signout_path, id: "sign_out" %>
+                  </div>
+                  <% else %>
+                  <div class = "span6">
+                           <div class ="btn "><%= link_to "Inicia sesion con tu Facebook", "/auth/facebook", id: "sign_in" %> </div>
+                  </div>
+                  <% end %>
+             
+                   <% if current_user %>
+                   <% else %>
+
+
+                    <h5> <%= link_to "Registro Sin Facebook", :controller => "attendees", :action => "new" %> </h5>
+            
+                <% end -%>
+      
+
+      <% if current_user%>
+            <div class ="btn btn-primary"><%= link_to "Continuar", :controller => "attendees", :action => "new" %> </div>
+      <% else %>
+      <% end -%>
+
+</div>
