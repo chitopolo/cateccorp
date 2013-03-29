@@ -51,7 +51,7 @@ class AttendeesController < ApplicationController
 
     respond_to do |format|
       if @attendee.save
-        #AttendeeMailer.signup_confirmation(@attendee).deliver
+        AttendeeMailer.signup_confirmation(@attendee).deliver
 
         format.html { redirect_to @attendee, notice: 'Attendee was successfully created.' }
         format.json { render json: @attendee, status: :created, location: @attendee }
