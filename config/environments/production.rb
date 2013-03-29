@@ -52,7 +52,6 @@ config.action_mailer.smtp_settings = {
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 
-
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
 
