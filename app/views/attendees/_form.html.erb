@@ -24,9 +24,9 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label "Nivel", :class => 'control-label' %>
+    <%= f.label "Institución", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :level, :class => 'text_field' %>
+      <%= f.select :level, options_for_select([["Elija una Institución", "no eligio"], ["UCATEC", "ucatec"], ["CATEC", "catec"]]) %>
     </div>
   </div>
   <div class="control-group">
@@ -47,7 +47,7 @@
   <div class="control-group">
     <%= f.label "Ciudad", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :city, :class => 'text_field' %>
+      <%= f.select :city, options_for_select([["Elija una Ciudad", "no eligio"], ["Cochabamba", "Cochabamba"], ["Santa Cruz", "Santa Cruz"], ["Oruro", "Oruro"], ["Tarija", "Tarija"]]) %>
     </div>
   </div>
   <div class="control-group">

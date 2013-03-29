@@ -1,5 +1,8 @@
 <%- model_class = Attendee -%>
 <div class="page-header">
-  <h1>Nuevo Registro</h1>
+  <div class = "row-fluid">
+  
+  <div class = "span8"><h1>Nuevo Registro</h1></div><div class = "span4"> <div class ="btn "><%= link_to "Ver los precios", :controller => "welcome", :action => "prices"  %></div></div>
+  </div>
 </div>
 <%= render :partial => 'form' %>
