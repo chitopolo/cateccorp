@@ -43,6 +43,11 @@ class AttendeesController < ApplicationController
   # POST /attendees.json
   def create
     @attendee = Attendee.new(params[:attendee])
+      
+
+      AttendeeMailer.signup_confirmation(@attendee).deliver
+
+
 
     respond_to do |format|
       if @attendee.save
