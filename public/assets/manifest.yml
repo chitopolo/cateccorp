@@ -11,6 +11,10 @@ imgpeque2.jpg: imgpeque2-444ccb2982deaeff808cac96e7a9a159.jpg
 imgpeque2/index.jpg: imgpeque2-444ccb2982deaeff808cac96e7a9a159.jpg
 imgpeque3.jpg: imgpeque3-c48d16ca8ab29e407f35d172c2c57226.jpg
 imgpeque3/index.jpg: imgpeque3-c48d16ca8ab29e407f35d172c2c57226.jpg
+pdf2.png: pdf2-6be956876a05627f6491d9c6d2143661.png
+pdf2/index.png: pdf2-6be956876a05627f6491d9c6d2143661.png
+pdfwhite.png: pdfwhite-342517b7b723fef82a6234f3a8bc3d36.png
+pdfwhite/index.png: pdfwhite-342517b7b723fef82a6234f3a8bc3d36.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 application.js: application-6cdd621e5329d186c18e0107b63a7f50.js
